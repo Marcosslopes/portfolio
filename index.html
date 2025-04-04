@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <link rel="stylesheet" type="text/css" href="css/mobile.css">
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <title>Portfolio Marcos Lopes</title>
+  </head>
+
+  <body>
+    
+    <header> <!-- Inicio | Header -->
+      <nav class="navbar navbar-expand-md fixed-top"> <!-- Inicio | Nav -->
+        <div class="container">
+          <h3>Marcos Lopes</h3>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#principal-barra" aria-controls="principal-barra" aria-expanded="false" aria-label="Toggle navigation">
+            <svg class="navbar-toggler-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" fill="currentColor" stroke="currentColor" stroke-width="2">
+              <path d="M5 7h20M5 15h20M5 23h20"/>
+            </svg>
+          </button>
+          <div class="collapse navbar-collapse" id="principal-barra"> <!-- Barra de navegação -->
+            <ul class="navbar-nav"> 
+              <li class="nav-item">
+                <a id="clean_mode" aria-label="modo dark / modo light" class="nav-link" href="#">
+                  <i class="fa-solid fa-circle-half-stroke"></i>
+                </a>
+              </li>  
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>  
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sobre mim</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Habilidades</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Projetos</a>
+              </li>
+            </ul>
+          </div> <!-- Fim barra de navegação -->
+        </div>
+      </nav> <!-- Fim | Nav -->
+    </header> <!-- Fim | Header -->
+
+    <!-- Efeito de partículas -->
+    <div id="particles-js"></div>
+
+    <!-- Conteudo principal -->
+    <main class="container">
+      <section id="home" class="d-flex">
+        <div class="align-self-center text-center">
+          <h1 class="display-4">Olá, sou <strong>Marcos Lopes</strong> </h1>
+          <div class="digitado">
+            Eu sou <span id="typed-output"></span>
+          </div>
+        </div>
+      </section>
+
+      <section id="sobre" class="d-flex"> <!-- Inicio | Sobre-->
+        <div class="container align-self-center">
+          <div class="row mb-4">
+            <div class="col-lg-8"> <!-- Inicio | textos -->
+              <h1 class="display-4"><strong class="nome">Sobre</strong></h1>
+              <h4>Quem eu sou?</h4>
+              <p class="mt-4 text-monospace mt-4">
+                Sou Marcos Lopes, um <span>desenvolvedor Front-End</span> apaixonado por tecnologia e inovação. 
+                Minha jornada de desenvolvimento é movida pela curiosidade e pelo desejo
+                constante de aprender e construir.<br>
+                Atualmente estou cursando <span>Análise e desenvolvimento de Sistemas</span> na FATEC Taubaté 
+                aprimorando minhas habilidades com cursos complementares, sempre buscando novas 
+                formas de evoluir.
+              </p>
+              <div class="mt-4 redes"> <!-- Links de redes sociais -->
+                <a class="ml-4" rel="noopener" target="_blank" aria-label="Perfil de Marcos Lopes no LinkedIn" href="https://www.linkedin.com/in/marcos-lopes-b1b855250/">
+                  <i class="fa-brands fa-linkedin fa-2x"></i>
+                </a>
+                <a class="ml-4" rel="noopener" aria-label="Perfil de Marcos Lopes no Github" target="_blank" href="https://github.com/Marcosslopes">
+                  <i class="fa-brands fa-github fa-2x"></i>  
+                </a>
+                <a class="ml-4" rel="noopener" aria-label="CV" href="#"> 
+                  <i class="fa-solid fa-file fa-2x"></i>  
+                </a> 
+              </div>
+            </div> <!-- Fim | textos -->
+            <div class="col-lg-4">  <!-- Avatar -->          
+                <img src="imagens/avatar.png" alt="Avatar" class="rounded-circle img-fluid avatar d-none d-lg-block">           
+            </div>           
+          </div>
+        </div>
+      </section> <!-- Fim | Sobre -->
+
+      <section id="habilidades">
+        <h2 class="display-4">Experiência e Habilidades</h2>
+        <div class="row">
+          <div id="experience-container" class="col-lg-9">
+          </div>
+
+          <div class="col-lg-1"></div>
+          <!-- Icones tecnologias -->
+          <div class="col-lg-2 icones">
+            
+              <i class="fa-brands fa-html5"></i>
+              <i class="fa-brands fa-css3-alt"></i>
+            
+            
+              <i class="fa-brands fa-js"></i>
+              <i class="fa-brands fa-react"></i>            
+           
+            
+              <i class="fa-brands fa-bootstrap"></i>
+              <i class="fa-brands fa-figma"></i>
+           
+          </div>
+        </div>
+      </section>
+
+      <section id="projetos">
+        <div class="container">
+          <h2 class="display-4">Projetos</h2>
+          
+
+          <div class="card-group card-projeto">
+
+            <!-- Card 1 -->
+            <div class="card text-center">
+              <img src="imagens/xpzone.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">XP Zone</h5>
+                <p class="card-text">Site moderno para a comunidade gamer, reunindo notícias, eventos e interações.</p>
+              </div>
+              <div class="card-footer">
+                <a href="">
+                  <i class="fa-brands fa-github fa-2x"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card text-center">
+              <img src="imagens/coffee.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Coffe House</h5>
+                <p class="card-text">Site elegante para cafeterias, combinando menu 
+                      digital e experiência aconchegante.</p>
+              </div>
+              <div class="card-footer">
+                <a href="">
+                  <i class="fa-brands fa-github fa-2x"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card text-center">
+              <img src="imagens/mosquito.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Game Mata Mosquito</h5>
+                <p class="card-text">Jogo interativo onde o objetivo é eliminar os mosquitos antes que o tempo acabe.</p>
+              </div>
+              <div class="card-footer">
+                <a href="">
+                  <i class="fa-brands fa-github fa-2x"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+
+    </main>
+
+    <footer >
+      <div class="container">
+        <div class="row">
+          <!-- Linha 1 -->
+          <div class="col-12">
+            <hr/>          
+          </div>
+
+          <!-- Linha 2 -->
+          <div class="col-md-6">
+            <h3>Marcos Lopes</h3>
+            <p>Desenvolvendo experiências únicas e responsivas</p>
+            <div>
+              <a class="ml-4" rel="noopener" target="_blank" aria-label="Perfil de Marcos Lopes no LinkedIn" href="https://www.linkedin.com/in/marcos-lopes-b1b855250/">
+                <i class="fa-brands fa-linkedin fa-2x"></i>
+              </a>
+              <a class="ml-4" rel="noopener" target="_blank" href="https://github.com/Marcosslopes" aria-label="Perfil de Marcos Lopes no GitHub">
+                <i class="fa-brands fa-github fa-2x"></i>  
+              </a>
+              <a class="ml-4" href="#" aria-label="CV"> 
+                <i class="fa-solid fa-file fa-2x"></i>  
+              </a> 
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <h4> Links </h4>
+            <a href="">Home</a>
+            <a href="">Sobre</a>
+            <a href="">Habilidades</a>
+            <a href="">Projetos</a>
+          </div>
+
+          <div class="col-md-3 col-6">
+            <h4> Projetos </h4>
+            <a target="_blank" rel="noopener" href="https://github.com/Marcosslopes/xp_zone.git">XP Zone</a>
+            <a target="_blank" rel="noopener" href="https://github.com/Marcosslopes/Coffee_House.git">Coffe House</a>
+            <a target="_blank" rel="noopener" href="https://github.com/Marcosslopes/mata-mosquito.git">Game mata mosquito</a>           
+          </div>
+
+          <!-- Linha 3 -->
+          <div class="col-12">
+            <hr/>
+          </div>
+
+
+        </div>
+
+      </div>
+    </footer>
+
+    <script src="js/clean_mode.js"></script>
+    <script src="js/reveal.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="js/digita.js"></script>
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f2497542a5.js" crossorigin="anonymous"></script>
+  </body>
+</html>
